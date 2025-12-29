@@ -1,0 +1,93 @@
+
+.logo {
+     width: 30px;
+}
+#navheading{
+    background-color: rgb(0, 247, 255);
+    border-radius: 10px;
+}
+.lightbtn{
+    border-radius: 10px;
+    background-color: rgba(251, 255, 0, 0.996);
+}
+.darkbtn{
+    border-radius: 10px;
+    background-color:rgb(255, 255, 255);
+}
+
+ .dark  ,body {
+    background-color: darkblue;
+    color: white;
+}
+.dark .card {
+    background-color: darkblue;
+    color: white;
+}
+.light  {
+    background-color: white;
+    color:black;
+}
+
+.light .card {
+    background-color: white;
+    color:black;
+}
+
+.searchbtn{
+    background-color:aqua;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin:5px ;
+}
+.searchbtn:hover{
+    background-color:red;
+    box-shadow: 1px 1px 10px 5px aqua;
+}
+#searchbtndiv{
+    margin: auto;
+    width: 65px;
+}
+
+.card {
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: rgb(0, 247, 255);
+    margin:10px;
+    box-shadow: 1px 1px 10px 5px rgb(0, 255, 242);
+
+}
+.poster{
+    margin: 10px;
+    width:200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.searchip{
+    border-radius:10px ;
+    border-color: aqua;
+    box-shadow: 1px 1px 10px 5px aqua;
+}
+.searchdiv{
+    margin: auto;
+    width:250px;
+}
+.detailmovie{
+    margin:15px;
+    font-family:monospace;
+    
+}
+.notfound{
+    border-style: solid;
+    border-color: red;
+    box-shadow: 1px 1px 10px 10px red;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 10px;
+}
+.loading{
+    width:90%;
+    height:200px;
+    padding-left:50px ;
+}
