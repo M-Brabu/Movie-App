@@ -16,7 +16,7 @@ function Search(){
   function searchmovie(movieName){
         setMovielist(null)
         setLoading(true)
-       fetch(`http://www.omdbapi.com/?s=${encodeURIComponent(movieName)}&apikey=${API_KEY}`)
+       fetch(`https://www.omdbapi.com/?s=${encodeURIComponent(movieName)}&apikey=${API_KEY}`)
       .then((response)=>{ return response.json();})
       .then((data)=>{setMovielist(data.Search);setLoading(false);setResponse(data.Response);console.log("kani",data);console.log(data.Response)})
       .catch((error)=>{console.log(error); setError(error)})

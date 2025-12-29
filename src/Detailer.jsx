@@ -6,7 +6,7 @@ function Detailer(){
     let {imdbId}=useParams()
     const API_KEY=import.meta.env.VITE_OMDB_API_KEY
     useEffect(()=>{
-    fetch(`http://www.omdbapi.com/?i=${imdbId}&apikey=${API_KEY}`)
+    fetch(`https://www.omdbapi.com/?i=${imdbId}&apikey=${API_KEY}`)
     .then((response)=>{return response.json()})
     .then((data)=>{setMoviedetail(data)})
     .catch((error)=>{console.log(error)})
