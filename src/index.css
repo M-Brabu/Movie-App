@@ -91,3 +91,16 @@
     height:80%;
     padding-left:50px ;
 }
+.linkedin{
+    margin:10px;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: aqua;
+    box-shadow: 1px 1px 10px 5px aqua;
+}
+#linkedinbtn{
+    margin: 5px;
+    color: white;
+    font-family: cursive;
+}
