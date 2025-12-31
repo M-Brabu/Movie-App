@@ -54,8 +54,12 @@
     border-width: 3px;
     border-radius: 10px;
     border-color: rgb(0, 247, 255);
-    margin:10px;
+    margin:25px;
     box-shadow: 1px 1px 10px 5px rgb(0, 255, 242);
+}
+.card:hover{
+    box-shadow: 1px 1px 10px 10px aqua;
+    scale: 1.01;
 
 }
 .poster{
@@ -63,6 +67,9 @@
     width:200px;
     height: 200px;
     border-radius: 10px;
+}
+.poster:hover{
+    box-shadow: 1px 1px 10px 5px aqua;
 }
 .searchip{
     border-radius:10px ;
