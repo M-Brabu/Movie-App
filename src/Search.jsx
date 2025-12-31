@@ -12,13 +12,13 @@ function Search(){
   let [responser,setResponse]=useState("")
   let [movielist,setMovielist]=useState(null)
   let [loading,setLoading]=useState(false)
-  const API_KEY=import.meta.env.VITE_OMDB_API_KEY
+  const API_KEY=import.meta.env.VITE_OMDB_API_KEY 
   function searchmovie(movieName){
         setMovielist(null)
         setLoading(true)
        fetch(`https://www.omdbapi.com/?s=${encodeURIComponent(movieName)}&apikey=${API_KEY}`)
       .then((response)=>{ return response.json();})
-      .then((data)=>{setMovielist(data.Search);setLoading(false);setResponse(data.Response);console.log("kani",data);console.log(data.Response)})
+      .then((data)=>{setMovielist(data.Search);setLoading(false);setResponse(data.Response);console.log("response:",data);console.log(data.Response)})
       .catch((error)=>{console.log(error); setError(error)})
      
   }
@@ -26,7 +26,7 @@ function Search(){
     return(<>
     <Navbar />
     <img src={clip} className="logo m-3"/><span className="h1">Search Page</span>
-    <div className='searchdiv'><input value={movieName} type="text"  onChange={(e)=>{setMovieName(e.target.value); console.log(e.target.value)}} placeholder='Type Movie Name here...' className='searchip m-4'/></div>
+    <div className='searchdiv'><input  type="text"  onChange={(e)=>{setMovieName(e.target.value.trim()); console.log(e.target.value)}} placeholder='Type Movie Name here...' className='searchip m-4'/></div>
     <div id="searchbtndiv"><button className="searchbtn" onClick={()=>searchmovie(movieName)}>Click</button></div>
     { (responser==="False") &&  <><div className='notfound h1'> <img src={errorimg} alt="" /> Movie not found !!!</div> </>}
    {loading && <img className=" m-2 loading" src={load} alt="Loading...."/>}
