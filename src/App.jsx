@@ -5,8 +5,6 @@ import Notfound from "./Notfound"
 import Navbar from './Navbar'
 import Detailer from "./Detailer"
 import {createBrowserRouter,RouterProvider} from 'react-router-dom'
-import sun from './assets/brightness-high-fill.svg'
-import moon from './assets/moon-stars.svg'
 import { useState } from 'react';
 function App(){
 
@@ -25,9 +23,7 @@ function darkmode(){
   {element:<Navbar/>,path:"/Navbar"},
   {element:<Detailer/>,path:"/Detailer/:imdbId"}])
   return(<>
-      <div className={mode} >
-        <button className="darkbtn m-2 " onClick={darkmode}><img src={moon} alt="" /></button>
-        <button className="lightbtn m-2 " onClick={lightmode}><img src={sun} /></button>
+      <div>
         <RouterProvider router={router}/>
       </div>
      

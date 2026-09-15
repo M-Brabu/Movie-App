@@ -1,48 +1,31 @@
 
 .logo {
-     width: 30px;
+    margin-top:3%;
+    width: 35px;
+    height: 45px;
 }
-#navheading{
-    background-color: rgb(0, 247, 255);
+.nav{
+    background-color: rgb(0, 76, 255);
     border-radius: 10px;
-}
-.lightbtn{
-    border-radius: 10px;
-    background-color: rgba(251, 255, 0, 0.996);
-}
-.darkbtn{
-    border-radius: 10px;
-    background-color:rgb(255, 255, 255);
-}
-
- .dark  ,body {
-    background-color: darkblue;
     color: white;
 }
-.dark .card {
-    background-color: darkblue;
-    color: white;
-}
-.light  {
-    background-color: white;
-    color:black;
-}
 
-.light .card {
+ body {
     background-color: white;
-    color:black;
+    color: black;
+    font-family: cursive;
 }
 
 .searchbtn{
-    background-color:aqua;
+    background-color:rgb(0,76,255);
     color: white;
     border: none;
     border-radius: 5px;
     margin:5px ;
 }
 .searchbtn:hover{
-    background-color:red;
-    box-shadow: 1px 1px 10px 5px aqua;
+    background-color:blueviolet;
+    box-shadow: 1px 1px 5px 3px violet;
 }
 #searchbtndiv{
     margin: auto;
@@ -53,12 +36,12 @@
     border-style: solid;
     border-width: 3px;
     border-radius: 10px;
-    border-color: rgb(0, 247, 255);
+    border-color: rgb(0, 76, 255);
     margin:25px;
-    box-shadow: 1px 1px 10px 5px rgb(0, 255, 242);
+    box-shadow: 1px 1px 10px 5px rgb(0, 76, 255);
 }
 .card:hover{
-    box-shadow: 1px 1px 10px 10px aqua;
+    box-shadow: 1px 1px 10px 10px rgb(0, 76, 255);
     scale: 1.01;
 
 }
@@ -69,12 +52,12 @@
     border-radius: 10px;
 }
 .poster:hover{
-    box-shadow: 1px 1px 10px 5px aqua;
+    box-shadow: 1px 1px 3px 5px rgb(0, 75, 255);
 }
 .searchip{
     border-radius:10px ;
-    border-color: aqua;
-    box-shadow: 1px 1px 10px 5px aqua;
+    border-color: blue;
+    box-shadow: 1px 1px 5px 5px rgb(0, 145, 255);
 }
 .searchdiv{
     margin: auto;
@@ -99,15 +82,36 @@
     padding-left:50px ;
 }
 .linkedin{
-    margin:10px;
-    padding: 10px;
+    margin:30px;
+    padding: 20px;
     border-radius: 10px;
     border-style: solid;
-    border-color: aqua;
-    box-shadow: 1px 1px 10px 5px aqua;
+    border-color:rgb(0,76,255);
+    box-shadow: 1px 1px 10px 3px rgb(0,76,255);
 }
 #linkedinbtn{
     margin: 5px;
     color: white;
+    font-family: cursive;
+}
+.mh{
+    display: flex;
+   
+}
+.mb{
+    display: flex;
+     justify-content: space-between;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.hunt{
+    margin-top: 15px;
+    font-size: 26px;
+}
+.search-page{
+    margin: 40px;
+    font-size: 26px;
     font-family: cursive;
 }

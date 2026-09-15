@@ -25,7 +25,7 @@ function Search(){
 
     return(<>
     <Navbar />
-    <img src={clip} className="logo m-3"/><span className="h1">Search Page</span>
+    <span className="search-page">Search Page</span>
     <div className='searchdiv'><input  type="text"  onChange={(e)=>{setMovieName(e.target.value.trim()); console.log(e.target.value)}} placeholder='Type Movie Name here...' className='searchip m-4'/></div>
     <div id="searchbtndiv"><button className="searchbtn" onClick={()=>searchmovie(movieName)}>Click</button></div>
     { (responser==="False") &&  <><div className='notfound h1'> <img src={errorimg} alt="" /> Movie not found !!!</div> </>}
@@ -39,7 +39,7 @@ function Search(){
       <h6>Release : {movies.Year}</h6>
       <h6>Type(Movie or Web-Series) : {movies.Type}</h6>
       <h6>IMDB ID : {movies.imdbID}</h6>
-      <button className='btn btn-info' onClick={()=>{navigate('/Detailer/'+movies.imdbID)}}>Details</button>
+      <button className='btn btn-primary' onClick={()=>{navigate('/Detailer/'+movies.imdbID)}}>Details</button>
 
       </div>
     </div>
