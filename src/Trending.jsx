@@ -47,8 +47,8 @@ function Trending() {
           />
           </div>
           <p className="tm-overview">{movie.overview}</p>
-          <p>{movie.vote_average}</p>
-          <p>{movie.release_date}</p>
+          <p>Rating : {movie.vote_average}</p>
+          <p>Release Date : {movie.release_date}</p>
         </div>
        
       ))}
