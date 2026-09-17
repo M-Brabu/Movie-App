@@ -1,4 +1,3 @@
-import clip from './assets/media-player.svg'
 import Navbar from "./Navbar"
 import { useState } from 'react'
 import errorimg from './assets/errorimg.svg'

@@ -115,3 +115,37 @@
     font-size: 26px;
     font-family: cursive;
 }
+.tm-card{
+  border-color: blue;
+  border-style: solid;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px 4px blue;
+  padding: 30px;
+  margin: 30px;
+}
+.tm-img{
+  display: flex;
+  justify-content: center;
+  width:200px;
+  height:200px;
+  border-radius: 10px;
+}
+.img-div-trend{
+  display: flex;
+  justify-content: center;
+}
+.tm-h1{
+  display: flex;
+  justify-content: center; 
+  margin-top: 20px;
+}
+.tm-card-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:20px;
+}
+@media (max-width: 600px) {
+  .tm-card-container {
+    grid-template-columns: 1fr;
+  }
+}

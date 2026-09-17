@@ -1,22 +1,16 @@
 import About from "./About"
 import Search from "./Search"
-import Home from "./Home"
+import Trending from "./Trending"
 import Notfound from "./Notfound"
 import Navbar from './Navbar'
 import Detailer from "./Detailer"
 import {createBrowserRouter,RouterProvider} from 'react-router-dom'
-import { useState } from 'react';
+
 function App(){
 
-var [mode,setMode]=useState("dark");
-function lightmode(){
-    mode= setMode("light")
-} 
-function darkmode(){
-   mode= setMode("dark")
-}   
+
   const router=createBrowserRouter(
-    [{element:<Home/>, path:"/" },
+    [{element:<Trending />, path:"/" },
   {element: <Search />,path:"/Search"},
   {element:<About/>,path:"/About"},
   {element:<Notfound/>,path:"*"},
