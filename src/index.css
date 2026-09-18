@@ -39,6 +39,7 @@
     border-color: rgb(0, 76, 255);
     margin:25px;
     box-shadow: 1px 1px 10px 5px rgb(0, 76, 255);
+
 }
 .card:hover{
     box-shadow: 1px 1px 10px 10px rgb(0, 76, 255);
@@ -75,36 +76,35 @@
     margin: 25px;
     padding: 25px;
     border-radius: 10px;
+    background-color:white;
 }
 .loading{
     width:80%;
     height:80%;
     padding-left:50px ;
 }
-.linkedin{
-    margin:30px;
-    padding: 20px;
-    border-radius: 10px;
-    border-style: solid;
-    border-color:rgb(0,76,255);
-    box-shadow: 1px 1px 10px 3px rgb(0,76,255);
-}
-#linkedinbtn{
-    margin: 5px;
-    color: white;
-    font-family: cursive;
-}
+
 .mh{
     display: flex;
    
 }
 .mb{
     display: flex;
-     justify-content: space-between;
+    justify-content: space-between;
 }
 .nav{
     display: flex;
     justify-content: space-between;
+}
+@media (max-width: 600px) {
+    .mb{
+        display: flex;
+        flex-direction: row;
+    }
+    .mh{
+        display: flex;
+        flex-direction: row;
+    }
 }
 .hunt{
     margin-top: 15px;
@@ -123,12 +123,19 @@
   padding: 30px;
   margin: 30px;
 }
+.tm-card:hover{
+  box-shadow: 1px 1px 4px 4px blueviolet;
+  scale: 1.01;
+}
 .tm-img{
   display: flex;
   justify-content: center;
   width:200px;
   height:200px;
   border-radius: 10px;
+  border-style: solid;
+  border-color: blue;
+  box-shadow: 1px 1px 4px 2px blue;
 }
 .img-div-trend{
   display: flex;
@@ -148,4 +155,24 @@
   .tm-card-container {
     grid-template-columns: 1fr;
   }
+}
+.g-c{
+    margin: 10px;
+}
+.gen-btn{
+    background-color: rgb(0, 76, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin:5px ;
+}
+.genre-btn-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1px;    
+    justify-content: center;
+}
+.gen-h1{
+    justify-content: center;
+    display: flex;
 }

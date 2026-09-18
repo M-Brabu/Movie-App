@@ -9,7 +9,7 @@ function Navbar(){
     <div className="m-3 mb ">
       <Link to="/" className=" m-1 btn btn-light" >HOME</Link>
       <Link to="/Search" className="m-1 btn btn-success">Search</Link>
-      <Link to="/About" className="m-1 btn btn-danger">About</Link>
+      <Link to="/GenreMovies" className="m-1 btn btn-danger">Genre</Link>
     </div> 
     </div>
    </>)

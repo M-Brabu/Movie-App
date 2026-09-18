@@ -40,12 +40,14 @@ function Trending() {
       
         <div key={movie.id} className="tm-card">
           <h2 className="tm-title">{movie.title}</h2>
+          <hr></hr>
           <div className="img-div-trend">
           <img
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
             alt={movie.title} className="tm-img"
           />
           </div>
+          <hr></hr>
           <p className="tm-overview">{movie.overview}</p>
           <p>Rating : {movie.vote_average}</p>
           <p>Release Date : {movie.release_date}</p>

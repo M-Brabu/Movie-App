@@ -1,4 +1,4 @@
-import About from "./About"
+import GenreMovies from "./GenreMovies"
 import Search from "./Search"
 import Trending from "./Trending"
 import Notfound from "./Notfound"
@@ -12,7 +12,7 @@ function App(){
   const router=createBrowserRouter(
     [{element:<Trending />, path:"/" },
   {element: <Search />,path:"/Search"},
-  {element:<About/>,path:"/About"},
+  {element:<GenreMovies/>,path:"/GenreMovies"},
   {element:<Notfound/>,path:"*"},
   {element:<Navbar/>,path:"/Navbar"},
   {element:<Detailer/>,path:"/Detailer/:imdbId"}])
